@@ -1,7 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 class TicTacToeHomePagState extends StatefulWidget {
   const TicTacToeHomePagState({super.key});
 
@@ -62,11 +60,11 @@ class _TicTacToeHomePagStateState extends State<TicTacToeHomePagState> {
                     children: [
                       Text(
                         'Player O',
-                        style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 34,color: Colors.yellow.shade600)),
+                        style: TextStyle(fontSize: 34,color: Colors.yellow.shade600),
                       ),
                       Text(
                         oScore.toString(),
-                        style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 28,color: Colors.yellow.shade600)),
+                        style: TextStyle(fontSize: 28,color: Colors.yellow.shade600),
                       ),
                     ],
                   ),
@@ -75,11 +73,11 @@ class _TicTacToeHomePagStateState extends State<TicTacToeHomePagState> {
                     children: [
                       Text(
                         'Player X',
-                        style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 34,color: Colors.yellow.shade600)),
+                        style: TextStyle(fontSize: 34,color: Colors.yellow.shade600),
                       ),
                       Text(
                         xScore.toString(),
-                        style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 28,color: Colors.yellow.shade600))
+                        style: TextStyle(fontSize: 28,color: Colors.yellow.shade600)
                       ),
                     ],
                   ),
@@ -110,13 +108,12 @@ class _TicTacToeHomePagStateState extends State<TicTacToeHomePagState> {
                         ),
                         child: Text(
                           displaySign[index],
-                          style: GoogleFonts.knewave(
-                            textStyle: TextStyle(
+                          style: TextStyle(
+                            fontFamily: 'Knewave',
                             fontSize: 64,
                             fontWeight: FontWeight.bold,
                             color: displaySign[index] == 'X'? Colors.blue.shade800 : Colors.red.shade700,
                             ),
-                          ),
                         ),
                       ),
                     ) ,
@@ -133,7 +130,7 @@ class _TicTacToeHomePagStateState extends State<TicTacToeHomePagState> {
                   ),
                   Text(
                     result , 
-                    style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 40, color: Colors.yellow.shade600)),
+                    style: TextStyle(fontSize: 40, color: Colors.yellow.shade600),
                   ),
                   SizedBox(
                     height: 20,
@@ -303,7 +300,7 @@ class _TicTacToeHomePagStateState extends State<TicTacToeHomePagState> {
           Center(
             child: Text(
               '$time',
-              style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 35,color: Colors.black)),
+              style: TextStyle(fontSize: 35,color: Colors.black),
             ),
           )
         ],
@@ -321,7 +318,7 @@ class _TicTacToeHomePagStateState extends State<TicTacToeHomePagState> {
       }, 
       child: Text(
         attempts == 0? 'Start' : 'Play Again !',
-        style: GoogleFonts.chewy(textStyle: TextStyle(fontSize: 22, color: Colors.black)),
+        style: TextStyle(fontSize: 22, color: Colors.black),
       ),
     );
   }
